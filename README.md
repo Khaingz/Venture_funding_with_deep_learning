@@ -101,10 +101,10 @@ y = encoded_df['IS_SUCCESSFUL']
 #### Display a sample of y
 y.head()
 
-# Define features set X by selecting all columns but IS_SUCCESSFUL
+#### Define features set X by selecting all columns but IS_SUCCESSFUL
 X = encoded_df.drop(columns='IS_SUCCESSFUL')
 
-# Review the features DataFrame
+#### Review the features DataFrame
 X.head()
 
 Step 6. Split the features and target sets into training and testing datasets.
@@ -171,6 +171,9 @@ nn.add(Dense(units=1, activation="sigmoid"))
 #### Display the Sequential model summary
 nn.summary()
 
+![alt text](https://github.com/Khaingz/Venture_funding_with_deep_learning/blob/main/Model-Sequential.png)
+
+
 
 Step 2. Compile and fit the model using the binary_crossentropy loss function, the adam optimizer, and the accuracy evaluation metric.
 Hint When fitting the model, start with a small number of epochs, such as 20, 50, or 100.
@@ -224,6 +227,11 @@ nn_A1.summary()
 
 - - - - Model-Sequential_1 Screenshot
 
+![alt text](https://github.com/Khaingz/Venture_funding_with_deep_learning/blob/main/Model-Sequential_1.png)
+
+
+
+
 
 
 
@@ -233,6 +241,11 @@ Alternative Model 2
 nn_A2.summary()
 
 - - - - Model-Sequential_2 Screenshot
+
+![alt text](https://github.com/Khaingz/Venture_funding_with_deep_learning/blob/main/Model-Sequential_2.png)
+
+
+
 
 
 
@@ -249,7 +262,7 @@ print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
 
 - - - - Original Model Results Screenshot
 
-
+![alt text](https://github.com/Khaingz/Venture_funding_with_deep_learning/blob/main/Original%20Model%20Results.png)
 
 
 print("Alternative Model 1 Results")
@@ -262,6 +275,7 @@ print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
 
 - - - - Alternative Model 1 Results Screenshot
 
+![alt text](https://github.com/Khaingz/Venture_funding_with_deep_learning/blob/main/Alternative%20Model%201%20Results.png)
 
 
 
@@ -275,6 +289,7 @@ print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
 
 - - - - Alternative Model 2 Results Screenshot
 
+![alt text](https://github.com/Khaingz/Venture_funding_with_deep_learning/blob/main/Alternative%20Model%202%20Results.png)
 
 
 
